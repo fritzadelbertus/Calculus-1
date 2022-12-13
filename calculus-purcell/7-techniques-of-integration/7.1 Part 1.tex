@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Chapter 7.1 Basic Integration Rules}
+\author{Fritz Adelbertus Sitindaon}
+\date{13 December 2022}
+
+\begin{document}
+\maketitle
+
+\section{Perform the Indicated Integrations!}  
+  
+\begin{enumerate}
+\item $\displaystyle\int(x-2)^5 \ dx $
+
+Let $u = x-2$ and $du = dx$
+\begin{equation*}
+\begin{aligned}
+\int(x-2)^5 \ dx &= \int u^5 \ du \\
+&= \frac{1}{6}u^6 + C
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int\sqrt{3x} \ dx $
+
+Let $u = 3x$ and $du = 3dx$
+\begin{equation*}
+\begin{aligned}
+\int \sqrt{3x} \ dx &= \int \sqrt{3x}\ \frac{3}{3} \ dx \\
+&= \frac{1}{5} \int \sqrt{u} \, du \\
+&= \frac{1}{5} \ \frac{2}{3} u^{\frac{3}{2}} + C
+\end{aligned}
+\end{equation*}
+  
+\item $\displaystyle\int_0^2x(x^2+1)^5 \ dx $
+
+Let $u = x^2+1$ and $du = 2x\,dx$ \\
+Let the upper limit = 5 and the lower limit = 1 
+\begin{equation*}
+\begin{aligned}
+\int_0^2x(x^2+1)^5 \ dx  &= \frac{1}{2} \int_0^2(x^2+1)^5 \ 2x\,dx \\
+&= \frac{1}{2} \int_1^5 u^5 \ du \\
+&= \frac{1}{2} \ \left[\frac{1}{6} u^6\right]_1^5 \\
+&= \frac{1}{2} \left(\frac{1}{6} 5^6 - \frac{1}{6} 1^6 \right) \\
+&= \frac{1}{2} (2604) \\
+&= 1302
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int_0^1x\sqrt{1-x^2} \ dx $
+
+Let $u = 1-x^2$ and $du = -2x\,dx$ \\
+Let the upper limit = 0 and the lower limit = 1 
+\begin{equation*}
+\begin{aligned}
+\int_0^1x\sqrt{1-x^2} \ dx  &= -\frac{1}{2} \int_0^1\sqrt{1-x^2} \ -2x\,dx \\
+&= -\frac{1}{2} \int_1^0\sqrt{u} \ du \\
+&= \frac{1}{2} \int_0^1\sqrt{u} \ du \\
+&= \frac{1}{2} \ \left[\frac{2}{3} u^{\frac{3}{2}}\right]_0^1 \\
+&= \frac{1}{2} \left(\frac{2}{3} 1^{\frac{3}{2}} - \frac{2}{3} 0^{\frac{3}{2}} \right) \\
+&= \frac{1}{2} \ \frac{2}{3} \\
+&= \frac{1}{3}
+\end{aligned}
+\end{equation*}
+
+\end{enumerate}
+
+
+\end{document}
