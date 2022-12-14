@@ -1,0 +1,269 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Chapter 7.2 Integration by Parts}
+\author{Fritz Adelbertus Sitindaon}
+\date{14 December 2022}
+
+\begin{document}
+\maketitle
+
+\section{Evaluate using Integration by Parts!}  
+  
+\begin{enumerate}
+%Number 1
+\item $\displaystyle\int xe^x \ dx $
+
+Let $u = x$, $du=dx$, $v=e^x$, and $dv =e^xdx$
+\begin{equation*}
+\begin{aligned}
+\int xe^x \ dx &= xe^x - \int e^x \ dx \\
+&= xe^x - e^x + C \\
+&= e^x(x-1) + C
+\end{aligned}
+\end{equation*}
+
+%Number 2
+\item $\displaystyle\int xe^{3x} \ dx $
+
+Let $u = x$, $du=dx$, $v=\displaystyle\frac{1}{3}e^{3x}$, and $dv =e^{3x}dx$
+\begin{equation*}
+\begin{aligned}
+\int xe^{3x} \ dx &= \frac{1}{3}xe^{3x} - \int \frac{1}{3} e^{3x} \ dx \\
+&= \frac{1}{3}xe^{3x} - \frac{1}{9}e^{3x} + C
+\end{aligned}
+\end{equation*}
+  
+%Number 3
+\item $\displaystyle\int te^{5t+\pi} \ dt$
+
+Let $u = t$, $du=dt$, $v=\displaystyle\frac{1}{5}e^{5t+\pi}$, and $dv =e^{5t+\pi}dt$
+\begin{equation*}
+\begin{aligned}
+\int te^{5t+\pi} \ dt &= \frac{1}{5}te^{5t+\pi} - \int \frac{1}{5} e^{5t+\pi} \ dt \\
+&= \frac{1}{5}te^{5t+\pi} - \frac{1}{25} e^{5t+\pi} + C
+\end{aligned}
+\end{equation*}
+
+%Number 4
+\item $\displaystyle\int (t+7)e^{2t+3} \ dt$
+
+Let $u = t+7$, $du=dt$, $\displaystyle v=\frac{1}{2}e^{2t+3}$, and $dv =e^{2t+3}dt$
+\begin{equation*}
+\begin{aligned}
+\int (t+7)e^{2t+3} \ dt &= \frac{1}{2}(t+7)e^{2t+3} - \int \frac{1}{2} e^{2t+3} \ dt \\
+&= \frac{t}{2}e^{2t+3} + \frac{7}{2}e^{2t+3} - \frac{1}{4} e^{2t+3} + C \\
+&= \frac{t}{2}e^{2t+3} + \frac{13}{4}e^{2t+3} + C \\
+\end{aligned}
+\end{equation*}
+
+%Number 5
+\item $\displaystyle\int x \cos x \ dx$
+
+Let $u=x$, $du=dx$, $v=\sin x$, and $dv =\cos x\,dt$
+\begin{equation*}
+\begin{aligned}
+\int x \cos x \ dx &= x\sin x - \int \sin x \ dx \\
+&= x \sin x + \cos x + C
+\end{aligned}
+\end{equation*}
+
+%Number 6
+\item $\displaystyle\int x \sin 2x \ dx$
+
+Let $u=x$, $du=dx$, $v=-\frac{1}{2}\cos 2x$, and $dv =\sin 2x\,dt$
+\begin{equation*}
+\begin{aligned}
+\int x \sin 2x \ dx &= -\frac{1}{2}x\cos 2x - \int -\frac{1}{2}\cos 2x \ dx \\
+&= -\frac{x}{2}\cos 2x + \frac{1}{4} \sin 2x + C
+\end{aligned}
+\end{equation*}
+
+%Number 7
+\item $\displaystyle\int (t-3) \cos (t-3) \ dt$
+
+Let $u = t-3$ and $du = dt$
+$$\int (t-3) \cos (t-3) \ dt = \int u \cos u \ du $$
+
+Let $v=u$, $dv=du$, $w=\sin u$, and $dw =\cos u\,du$
+\begin{equation*}
+\begin{aligned}
+\int u \cos u \ du &= u\sin u - \int \sin u \ du \\
+&= u \sin u + \cos u + C \\
+&= (t-3) \sin (t-3) + \cos (t-3) + C \\
+\end{aligned}
+\end{equation*}
+
+%Number 8
+\item $\displaystyle\int (x-\pi) \sin x \ dx$
+
+Let $u=x-\pi$, $du=dx$, $v=-\cos x$, and $dv =\sin x\,dx$
+\begin{equation*}
+\begin{aligned}
+\int (x-\pi) \sin x \ dx &= -(x-\pi)\cos x - \int -\cos x \ dx \\
+&= (\pi-x)\cos x + \sin x + C \\
+\end{aligned}
+\end{equation*}
+
+%Number 9
+\item $\displaystyle\int t\,\sqrt{t+1} \ dt$
+
+Let $u=t$, $du=dt$, $v=\displaystyle\frac{2}{3}(t+1)^{3/2}$, and $dv =\sqrt{t+1} \,dt$
+\begin{equation*}
+\begin{aligned}
+\int t\,\sqrt{t+1} \ dt &= t\,\frac{2}{3}(t+1)^{3/2} - \int \frac{2}{3} (t+1)^{3/2} \ dt \\
+&= \frac{2t}{3}(t+1)^{3/2} -  \frac{4}{15} (t+1)^{5/2} + C \\
+\end{aligned}
+\end{equation*}
+
+%Number 10
+\item $\displaystyle\int t\,\sqrt[3]{2t+7} \ dt$
+
+Let $u=t$, $du=dt$, $v=\displaystyle\frac{3}{8}(2t+7)^{4/3}$, and $dv =\sqrt[3]{2t+7}\,dt$
+\begin{equation*}
+\begin{aligned}
+\int t\,\sqrt[3]{2t+7} \ dt &= t\,\frac{3}{8}(t+1)^{4/3} - \int \frac{3}{8}(2t+7)^{4/3} \ dt \\
+&= \frac{3t}{8}(2t+7)^{4/3} -  \frac{9}{112} (2t+7)^{7/3} + C \\
+\end{aligned}
+\end{equation*}
+
+%Number 11
+\item $\displaystyle\int \ln 3x \ dx$
+
+Let $u=\ln 3x$, $du=\displaystyle\frac{1}{x}\,dx$, $v=x$, and $dv =dx$
+\begin{equation*}
+\begin{aligned}
+\int \ln 3x \ dx &= \ln (3x)\,x - \int x\,\frac{1}{x}\ dx \\
+&= x \ln 3x - x + C\\
+\end{aligned}
+\end{equation*}
+
+%Number 12
+\item $\displaystyle\int \ln (7x^5) \ dx$
+
+Let $u=\ln (7x^5)$, $du=\displaystyle\frac{5}{x}\,dx$, $v=x$, and $dv =dx$
+\begin{equation*}
+\begin{aligned}
+\int \ln (7x^5) \ dx &= \ln (7x^5)\,x - \int x\,\frac{5}{x}\ dx \\
+&= 5x \ln (7x) - 5x + C\\
+\end{aligned}
+\end{equation*}
+
+%Number 13
+\item $\displaystyle\int \arctan x \ dx$
+
+Let $u=\arctan x$, $\displaystyle du=\frac{1}{1+x^2}\,dx$, $v=x$, and $dv =dx$ \\
+Let $w=1+x^2$ and $dw=2x\,dx$
+\begin{equation*}
+\begin{aligned}
+\int \arctan x \ dx &= \arctan (x)x - \int x\,\frac{1}{1+x^2}\,dx \\
+&= x\arctan x - \frac{1}{2}\int \frac{1}{w}\,dw \\
+&= x\arctan x - \frac{1}{2} \ln |w| + C\\
+&= x\arctan x - \frac{1}{2} \ln |1+x^2| + C\\
+&= x\arctan x - \frac{1}{2} \ln (1+x^2) + C
+\end{aligned}
+\end{equation*}
+
+%Number 14
+\item $\displaystyle\int \arctan 5x \ dx$
+
+Let $u=\arctan (5x)$, $\displaystyle du=\frac{1}{1+(5x) ^2}\,dx$, $v=x$, and $dv =dx$ \\
+Let $w=1+(5x)^2$ and $dw=10x\,dx$
+\begin{equation*}
+\begin{aligned}
+\int \arctan 5x \ dx &= \arctan (5x)x - \int x\,\frac{1}{1+(5x)^2}\,dx \\
+&= x\arctan (5x) - \frac{1}{10}\int \frac{1}{w}\,dw \\
+&= x\arctan (5x) - \frac{1}{10} \ln |w| + C\\
+&= x\arctan (5x) - \frac{1}{10} \ln |1+(5x)^2| + C\\
+&= x\arctan (5x) - \frac{1}{10} \ln (1+25x^2) + C
+\end{aligned}
+\end{equation*}
+
+%Number 15
+\item $\displaystyle\int \frac{\ln x}{x^2} \ dx$
+
+Let $u=\ln x$, $\displaystyle du=\frac{1}{x}\,dx$, $v=\displaystyle-\frac{1}{x}$, and $dv =\displaystyle\frac{1}{x^2}dx$
+\begin{equation*}
+\begin{aligned}
+\int \frac{\ln x}{x^2} \ dx &= \ln x \left(-\frac{1}{x}\right)  - \int -\frac{1}{x}\frac{1}{x}\,dx \\
+&= -\frac{\ln x}{x} + \int \frac{1}{x^2}\,dx \\
+&= -\frac{\ln x}{x} - \frac{1}{x}  + C
+\end{aligned}
+\end{equation*}
+
+%Number 16
+\item $\displaystyle\int_2^3 \frac{\ln 2x^5}{x^2} \ dx$
+
+Let $u=\ln 2x^5$, $\displaystyle du=\frac{5}{x}\,dx$, $v=\displaystyle-\frac{1}{x}$, and $dv =\displaystyle\frac{1}{x^2}dx$
+\begin{equation*}
+\begin{aligned}
+\int_2^3 \frac{\ln 2x^5}{x^2} \ dx &= \left[\ln (2x^5)\left( \frac{1}{x}\right)\right]_2^3 - \int_2^3 -\frac{1}{x}\frac{5}{x}\,dx \\
+&= \left[-\frac{\ln 2x^5}{x}\right]_2^3 + \int_2^3 \frac{5}{x^2}\,dx \\
+&= \left[-\frac{\ln(2(3)^5)}{3}-\left(-\frac{\ln(2(2)^5)}{2}\right)\right]+\left[-\frac{5}{x}\right]_2^3 \\
+&= -\frac{\ln 486}{3}+3\ln 2+\left[\left(-\frac{5}{3}\right)-\left(-\frac{5}{2}\right)\right] \\
+&= \frac{-\ln 486 + 9\ln 2}{3}+\left(-\frac{10}{6}+\frac{15}{6}\right)\\
+&= \frac{-2\ln 486 + 18\ln 2+5}{6}\\
+&\approx 0.8507
+\end{aligned}
+\end{equation*}
+
+%Number 17
+\item $\displaystyle\int_1^e \sqrt{t} \ln t \ dt$
+
+Let $u=\ln t$, $\displaystyle du=\frac{1}{t}\,dt$, $v=\displaystyle\frac{2}{3}t^{3/2}$, and $dv =\sqrt{t}\,dt$
+\begin{equation*}
+\begin{aligned}
+\int_1^e \sqrt{t} \ln t \ dt &= \left[\ln t\left( \frac{2}{3}t^{3/2}\right)\right]_1^e - \int_1^e \frac{2}{3}t^{3/2}\frac{1}{t}\,dt \\
+&=\left[\ln e \left(\frac{2}{3}e^{3/2}\right)-\ln 1 \left(\frac{2}{3}1^{3/2}\right)\right] - \int_1^e \frac{2}{3} \sqrt{t} \ dt \\
+&= \frac{2}{3}e^{3/2}-\frac{2}{3}\ln 1 - \left[\frac{4}{9}t^{3/2}\right]_1^e \\
+&= \frac{2}{3}e^{3/2}- 0 - \left(\frac{4}{9}e^{3/2}-\frac{4}{9}1^{3/2}\right) \\
+&= \frac{2}{9}e^{3/2}+\frac{4}{9} \\
+&\approx 1.4404
+\end{aligned}
+\end{equation*}
+
+%Number 18
+\item $\displaystyle\int_1^5 \sqrt{2x} \ln x^3 \ dx$
+
+Let $u=\ln x^3$, $\displaystyle du=\frac{3}{x}\,dx$, $v=\displaystyle\frac{1}{3}(2x)^{3/2}$, and $dv =\sqrt{2x}\,dx$
+\begin{equation*}
+\begin{aligned}
+\int_1^5 \sqrt{2x} \ln x^3 \ dx &= \left[\ln (x^3) \frac{1}{3}(2x)^{3/2}\right]_1^5 - \int_1^5 \frac{1}{3}(2x)^{3/2}\frac{3}{x}\,dx \\
+&=\left(\frac{1}{3}(2(5))^{3/2}\ln5^3-\frac{1}{3}(2(1))^{3/2}\ln1^3\right) -\int_1^5 \sqrt{8x} \ dx \\
+&= 10\sqrt{10}\ln 5 - 0 - \left[\frac{1}{12}(8x)^{3/2}\right]_1^5 \\
+&= 10\sqrt{10}\ln 5 - \left(\frac{1}{12}(8(5))^{3/2}-\frac{1}{12}(8(1))^{3/2}\right) \\
+&= 10\sqrt{10}\ln 5 - \frac{20\sqrt{10}}{3}+\frac{4\sqrt{2}}{3} \\
+&\approx 31.699
+\end{aligned}
+\end{equation*}
+
+%Number 19
+\item $\displaystyle\int z^3 \ln z \ dz$
+
+Let $u=\ln z$, $\displaystyle du=\frac{1}{z}\,dz$, $v=\displaystyle\frac{1}{4}z^4$, and $dv =z^3\,dz$
+\begin{equation*}
+\begin{aligned}
+\int z^3 \ln z \ dz &= \ln z \left(\frac{1}{4}z^4\right) - \int \frac{1}{4}z^4\frac{1}{z}\,dz \\
+&=\frac{z^4}{4}\ln z - \int \frac{1}{4}z^3\,dz \\
+&= \frac{z^4}{4}\ln z - \frac{1}{16}z^4 + C \\
+\end{aligned}
+\end{equation*}
+
+%Number 20
+\item $\displaystyle\int t\, \arctan t \ dt$
+
+Let $u=\arctan t$, $\displaystyle du=\frac{1}{1+t^2}\,dt$, $v=\displaystyle\frac{1}{2}t^2$, and $dv =t\,dt$
+\begin{equation*}
+\begin{aligned}
+\int t\, \arctan t \ dt &= \arctan t \left(\frac{1}{2}t^2\right) - \int \frac{1}{2}t^2 \frac{1}{1+t^2}\,dt \\
+&=\frac{t^2}{2}\arctan t - \frac{1}{2} \int \frac{t^2}{1+t^2}\,dt \\
+&=\frac{t^2}{2}\arctan t - \frac{1}{2} \int \frac{1+t^2}{1+t^2} -\frac{1}{1+t^2}\,dt \\
+&=\frac{t^2}{2}\arctan t - \frac{1}{2} \int dt + \frac{1}{2}\int \frac{1}{1+t^2}\,dt \\
+&=\frac{t^2}{2}\arctan t - \frac{1}{2}t + \frac{1}{2}\arctan t + C\\
+&=\frac{t^2+1}{2}\arctan t - \frac{1}{2}t + C
+\end{aligned}
+\end{equation*}
+\end{enumerate}
+
+\end{document}
