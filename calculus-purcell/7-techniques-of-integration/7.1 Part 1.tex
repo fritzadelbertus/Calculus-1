@@ -18,7 +18,8 @@ Let $u = x-2$ and $du = dx$
 \begin{equation*}
 \begin{aligned}
 \int(x-2)^5 \ dx &= \int u^5 \ du \\
-&= \frac{1}{6}u^6 + C
+&= \frac{1}{6}u^6 + C \\
+&= \frac{1}{6}(x-2)^6 + C
 \end{aligned}
 \end{equation*}
 
@@ -28,8 +29,9 @@ Let $u = 3x$ and $du = 3dx$
 \begin{equation*}
 \begin{aligned}
 \int \sqrt{3x} \ dx &= \int \sqrt{3x}\ \frac{3}{3} \ dx \\
-&= \frac{1}{5} \int \sqrt{u} \, du \\
-&= \frac{1}{5} \ \frac{2}{3} u^{\frac{3}{2}} + C
+&= \frac{1}{3} \int \sqrt{u} \, du \\
+&= \frac{1}{3} \ \frac{2}{3} u^{3/2} + C \\
+&= \frac{2}{9} (3x)^{3/2} + C
 \end{aligned}
 \end{equation*}
   
@@ -57,14 +59,88 @@ Let the upper limit = 0 and the lower limit = 1
 \int_0^1x\sqrt{1-x^2} \ dx  &= -\frac{1}{2} \int_0^1\sqrt{1-x^2} \ -2x\,dx \\
 &= -\frac{1}{2} \int_1^0\sqrt{u} \ du \\
 &= \frac{1}{2} \int_0^1\sqrt{u} \ du \\
-&= \frac{1}{2} \ \left[\frac{2}{3} u^{\frac{3}{2}}\right]_0^1 \\
-&= \frac{1}{2} \left(\frac{2}{3} 1^{\frac{3}{2}} - \frac{2}{3} 0^{\frac{3}{2}} \right) \\
+&= \frac{1}{2} \ \left[\frac{2}{3} u^{3/2}\right]_0^1 \\
+&= \frac{1}{2} \left(\frac{2}{3} 1^{3/2} - \frac{2}{3} 0^{3/2} \right) \\
 &= \frac{1}{2} \ \frac{2}{3} \\
 &= \frac{1}{3}
 \end{aligned}
 \end{equation*}
 
-\end{enumerate}
+\item $\displaystyle\int \frac{dx}{x^2+4}$
 
+Remember $\int\frac{1}{a^2+x^2}dx = \frac{1}{a}\arctan\left(\frac{x}{a}\right)$
+\begin{equation*}
+\begin{aligned}
+\int \frac{dx}{x^2+4} &= \int \frac{1}{2^2+x^2} \ dx \\
+&=\frac{1}{2}\arctan\left(\frac{x}{2}\right) + C
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int \frac{e^x}{2+e^x} \ dx$
+
+Let $u = 2+e^x$ and $du = e^x\,dx$
+\begin{equation*}
+\begin{aligned}
+\int \frac{e^x}{2+e^x} \ dx &= \int \frac{1}{2+e^x} \ e^x dx \\
+&= \int \frac{1}{u} \ du \\
+&= ln|u| + C \\
+&= ln|2+e^x| + C \\
+&= ln(2+e^x) + C
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int \frac{x}{x^2+4} \ dx$
+
+Let $u = x^2+4$ and $du = 2x\,dx$
+\begin{equation*}
+\begin{aligned}
+\int \frac{x}{x^2 + 4} \ dx &= \frac{1}{2}\int \frac{1}{x^2+4} \ 2x\,dx \\
+&= \frac{1}{2}\int \frac{1}{u} \ du \\
+&= \frac{1}{2} ln|u| + C \\
+&= \frac{1}{2} ln|x^2+4| + C \\
+&= \frac{1}{2} ln(x^2+4) + C
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int \frac{2t^2}{2t^2+1} \ dt$
+
+Let $u = \sqrt{2}t$ and $du = \sqrt{2}\,dt$
+\begin{equation*}
+\begin{aligned}
+\int \frac{2t^2}{2t^2 + 1} \ dt &= \int \frac{2t^2+1-1}{2t^2+1} \ dt \\
+&= \int \frac{2t^2+1}{2t^2+1}-\frac{1}{2t^2+1} \ dt \\
+&= \int dt -\int\frac{1}{2t^2+1} \ dt \\
+&= t - \int \frac{1}{1^2 + (\sqrt{2}t)^2} \ dt\\
+&= t - \frac{1}{\sqrt{2}}\int \frac{1}{1^2 + (\sqrt{2}t)^2} \ \sqrt{2}t\,dt\\
+&= t - \frac{1}{\sqrt{2}}\int \frac{1}{1^2 + u^2} \ du\\
+&= t - \frac{1}{\sqrt{2}}\arctan u + C\\
+&= t - \frac{1}{\sqrt{2}}\arctan(\sqrt{2}t) + C\\
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int 6z \sqrt{4+z^2} \ dz$
+
+Let $u = 4+z^2$ and $du = 2z\,dz$
+\begin{equation*}
+\begin{aligned}
+\int 6z \sqrt{4+z^2} \ dz &= 3\int \sqrt{4+z^2} \ 2z\,dz \\
+&= 3\int \sqrt{u} \ du \\
+&= 3\,\frac{2}{3} u^{3/2} + C \\
+&= 2 (4+z^2)^{3/2} + C
+\end{aligned}
+\end{equation*}
+
+\item $\displaystyle\int \frac{5}{\sqrt{2t+1}} \ dt$
+
+Let $u = 2t+1$ and $du = 2\,dt$
+\begin{equation*}
+\begin{aligned}
+\int \frac{5}{\sqrt{2t+1}} \ dt &= \frac{5}{2}\int\frac{1}{\sqrt{2t+1}} \ 2\,dt \\
+&= \frac{5}{2}\int\frac{1}{\sqrt{u}} \ du \\
+&= \frac{5}{2}2u^{1/2}+ C \\
+&= 5\sqrt{2t+1} + C
+\end{aligned}
+\end{equation*}
+\end{enumerate}
 
 \end{document}
