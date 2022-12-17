@@ -1,0 +1,371 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[a4paper, total={20cm, 25cm}]{geometry}
+\usepackage{tikz}
+\usepackage{multicol}
+
+\title{Chapter 7.5 Integration of Rational Functions Using Partial Fractions}
+\author{Fritz Adelbertus Sitindaon}
+\date{16 December 2022}
+
+\begin{document}
+\maketitle
+
+\section{Use Partial Fraction Decomposition to Perform the Integration!}  
+  
+\begin{enumerate}
+%Number 1
+\item $\displaystyle\int \frac{1}{x(x+1)}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{1}{x(x+1)}&=\frac{A}{x}+\frac{B}{x+1}\\
+  \frac{1}{x(x+1)}&=\frac{A(x+1)+B(x)}{x(x+1)}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$1=A(x+1)+B(x)$$
+Subtitute $x = 0$
+\begin{equation*}
+  \begin{aligned}
+  1&=A(0+1)+B(0)\\
+  A&=1
+  \end{aligned}
+\end{equation*}
+Subtitute $x = -1$
+\begin{equation*}
+  \begin{aligned}
+  1&=A(-1+1)+B(-1)\\
+  B&=-1
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int \frac{1}{x(x+1)}\,dx&=\int\frac{1}{x}+\frac{-1}{x+1}\,dx\\
+  &=\int\frac{1}{x}\,dx-\int\frac{1}{x+1}\,dx\\
+  &=\ln|x|-\ln|x+1|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 2
+\item $\displaystyle\int\frac{2}{x^{2}+3x}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{2}{x^{2}+3x}&=\frac{A}{x}+\frac{B}{x+3}\\
+  \frac{2}{x^{2}+3x}&=\frac{A(x+3)+B(x)}{x^{2}+3x}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$2=A(x+3)+B(x)$$
+Subtitute $x = 0$
+\begin{equation*}
+  \begin{aligned}
+  2&=A(0+3)+B(0)\\
+  A&=\frac{2}{3}
+  \end{aligned}
+\end{equation*}
+Subtitute $x = -3$
+\begin{equation*}
+  \begin{aligned}
+  2&=A(-3+3)+B(-3)\\
+  B&=-\frac{2}{3}
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{2}{x^{2}+3x}\,dx&=\int\frac{2}{3}\frac{1}{x}-\frac{2}{3}\frac{1}{x+3}\,dx\\
+  &=\frac{2}{3}\int\frac{1}{x}\,dx-\frac{2}{3}\int\frac{1}{x+3}\,dx\\
+  &=\frac{2}{3}\ln|x|-\frac{2}{3}\ln|x+3|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 3
+\item $\displaystyle\int\frac{3}{x^{2}-1}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{3}{x^{2}-1}&=\frac{A}{x-1}+\frac{B}{x+1}\\
+  \frac{3}{x^{2}-1}&=\frac{A(x+1)+B(x-1)}{x^{2}-1}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$3=A(x+1)+B(x-1)$$
+Subtitute $x = 1$
+\begin{equation*}
+  \begin{aligned}
+  3&=A(2)+B(0)\\
+  A&=\frac{3}{2}
+  \end{aligned}
+\end{equation*}
+Subtitute $x = -1$
+\begin{equation*}
+  \begin{aligned}
+  3&=A(0)+B(-2)\\
+  B&=-\frac{3}{2}
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{3}{x^{2}-1}\,dx&=\int\frac{3}{2}\frac{1}{x-1}-\frac{3}{2}\frac{1}{x+1}\,dx\\
+  &=\frac{3}{2}\int\frac{1}{x-1}\,dx-\frac{3}{2}\int\frac{1}{x+1}\,dx\\
+  &=\frac{3}{2}\ln|x-1|-\frac{3}{2}\ln|x+1|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 4
+\item $\displaystyle\int\frac{5x}{2x^{3}+6^{2}}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{5x}{2x^{3}+6^{2}}&=\frac{5x}{2x^{2}(x+3)}\\
+  \frac{5}{2x(x+3)}&=\frac{A}{2x}+\frac{B}{x+3}\\
+  \frac{5}{2x(x+3)}&=\frac{A(x+3)+B(2x)}{2x(x+3)}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$5=A(x+3)+B(2x)$$
+Subtitute $x = 0$
+\begin{equation*}
+  \begin{aligned}
+  5&=A(3)+B(0)\\
+  A&=\frac{5}{3}
+  \end{aligned}
+\end{equation*}
+Subtitute $x = -3$
+\begin{equation*}
+  \begin{aligned}
+  5&=A(0)+B(-6)\\
+  B&=-\frac{5}{6}
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{5x}{2x^{3}+6^{2}}\,dx&=\int\frac{5}{3}\frac{1}{2x}-\frac{5}{6}\frac{1}{x+3}\,dx\\
+  &=\frac{5}{6}\int\frac{1}{x}\,dx-\frac{5}{6}\int\frac{1}{x+3}\,dx\\
+  &=\frac{5}{6}\ln|x|-\frac{5}{6}\ln|x+3|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 5
+\item $\displaystyle\int\frac{x-11}{x^{2}+3x-4}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{x-11}{x^{2}+3x-4}&=\frac{A}{x+4}+\frac{B}{x-1}\\
+  \frac{x-11}{x^{2}+3x-4}&=\frac{A(x-1)+B(x+4)}{x^{2}+3x-4}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$x-11=A(x-1)+B(x+4)$$
+Subtitute $x = -4$
+\begin{equation*}
+  \begin{aligned}
+  -4-11&=A(-5)+B(0)\\
+  A&=3
+  \end{aligned}
+\end{equation*}
+Subtitute $x = 1$
+\begin{equation*}
+  \begin{aligned}
+  1-11&=A(0)+B(5)\\
+  B&=-2
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{x-11}{x^{2}+3x-4}\,dx&=\int\frac{3}{x+4}-\frac{2}{x-1}\,dx\\
+  &=3\int\frac{1}{x+4}\,dx-2\int\frac{1}{x-1}\,dx\\
+  &=3\ln|x+4|-2\ln|x-1|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 6
+\item $\displaystyle\int\frac{x-7}{x^{2}-x-12}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{x-7}{x^{2}-x-12}&=\frac{A}{x-4}+\frac{B}{x+3}\\
+  \frac{x-7}{x^{2}-x-12}&=\frac{A(x+3)+B(x-4)}{x^{2}-x-12}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$x-11=A(x+3)+B(x-4)$$
+Subtitute $x = 4$
+\begin{equation*}
+  \begin{aligned}
+  4-7&=A(7)+B(0)\\
+  A&=-\frac{3}{7}
+  \end{aligned}
+\end{equation*}
+Subtitute $x = -3$
+\begin{equation*}
+  \begin{aligned}
+  -3-7&=A(0)+B(-7)\\
+  B&=\frac{10}{7}
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{x-7}{x^{2}-x-12}\,dx&=\int-\frac{3}{7}\frac{1}{x-4}+\frac{10}{7}\frac{1}{x+3}\,dx\\
+  &=-\frac{3}{7}\int\frac{1}{x-4}\,dx+\frac{10}{7}\int\frac{1}{x+3}\,dx\\
+  &=-\frac{3}{7}\ln|x-4|+\frac{10}{7}\ln|x+3|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 7
+\item $\displaystyle\int\frac{3x-13}{x^{2}+3x-10}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{3x-13}{x^{2}+3x-10}&=\frac{A}{x+5}+\frac{B}{x-2}\\
+  \frac{3x-13}{x^{2}+3x-10}&=\frac{A(x-2)+B(x+5)}{x^{2}+3x-10}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$3x-13=A(x-2)+B(x+5)$$
+Subtitute $x = -5$
+\begin{equation*}
+  \begin{aligned}
+  -15-13&=A(-7)+B(0)\\
+  A&=4
+  \end{aligned}
+\end{equation*}
+Subtitute $x = 2$
+\begin{equation*}
+  \begin{aligned}
+  6-13&=A(0)+B(7)\\
+  B&=-1
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{3x-13}{x^{2}+3x-10}\,dx&=\int\frac{4}{x+5}-\frac{1}{x-2}\,dx\\
+  &=4\int\frac{1}{x+5}\,dx-\int\frac{1}{x-2}\,dx\\
+  &=4\ln|x+5|-\ln|x-2|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 8
+\item $\displaystyle\int\frac{x+\pi}{x^{2}-3\pi{x}+2\pi^{2}}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{x+\pi}{x^{2}-3\pi{x}+2\pi^{2}}&=\frac{A}{x-2\pi}+\frac{B}{x-\pi}\\
+  \frac{x+\pi}{x^{2}-3\pi{x}+2\pi^{2}}&=\frac{A(x-\pi)+B(x-2\pi)}{x^{2}-3\pi{x}+2\pi^{2}}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$x+\pi=A(x-\pi)+B(x-2\pi)$$
+Subtitute $x = 2\pi$
+\begin{equation*}
+  \begin{aligned}
+  3\pi&=A(\pi)+B(0)\\
+  A&=3
+  \end{aligned}
+\end{equation*}
+Subtitute $x = \pi$
+\begin{equation*}
+  \begin{aligned}
+  2\pi&=A(0)+B(-\pi)\\
+  B&=-2
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{x+\pi}{x^{2}-3\pi{x}+2\pi^{2}}\,dx&=\int\frac{3}{x-2\pi}-\frac{2}{x-\pi}\,dx\\
+  &=3\int\frac{1}{x-2\pi}\,dx-2\int\frac{1}{x-\pi}\,dx\\
+  &=3\ln|x-2\pi|-2\ln|x-\pi|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 9
+\item $\displaystyle\int\frac{2x+21}{2x^{2}+9x-5}\,dx$
+
+\begin{equation*}
+  \begin{aligned}
+  \frac{2x+21}{2x^{2}+9x-5}&=\frac{A}{2x-1}+\frac{B}{x+5}\\
+  \frac{2x+21}{2x^{2}+9x-5}&=\frac{A(x+5)+B(2x-1)}{2x^{2}+9x-5}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$2x+21=A(x+5)+B(2x-1)$$
+Subtitute $x = \displaystyle\frac{1}{2}$
+\begin{equation*}
+  \begin{aligned}
+  22&=A\left(\frac{11}{2}\right)+B(0)\\
+  A&=4
+  \end{aligned}
+\end{equation*}
+Subtitute $x = -5$
+\begin{equation*}
+  \begin{aligned}
+  11&=A(0)+B(-11)\\
+  B&=-1
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{2x+21}{2x^{2}+9x-5}\,dx&=\int\frac{4}{2x-1}-\frac{1}{x+5}\,dx\\
+  &=4\int\frac{1}{2x-1}\,dx-\int\frac{1}{x+5}\,dx\\
+  &=2\ln|2x-1|-\ln|x+5|+C
+  \end{aligned}
+\end{equation*}
+
+%Number 10
+\item $\displaystyle\int\frac{2x^{2}-x-20}{x^{2}+x-6}\,dx$
+
+Use Division for Polynomials to obtain:
+$$\int\frac{2x^{2}-x-20}{x^{2}+x-6}\,dx=\int{2}+\frac{-3x-8}{x^{2}+x-6}\,dx=\int{2}\,dx+\int\frac{-3x-8}{x^2+x-6}\,dx$$
+
+Evaluate $\displaystyle\int\frac{-3x-8}{x^{2}+x-6}\,dx$
+\begin{equation*}
+  \begin{aligned}
+  \frac{-3x-8}{x^{2}+x-6}&=\frac{A}{x+3}+\frac{B}{x-2}\\
+  \frac{-3x-8}{x^{2}+x-6}&=\frac{A(x-2)+B(x+3)}{x^{2}+x-6}\\
+  \end{aligned}
+\end{equation*}
+We receive the following equation
+$$-3x-8=A(x-2)+B(x+3)$$
+Subtitute $x = -3$
+\begin{equation*}
+  \begin{aligned}
+  1&=A(-5)+B(0)\\
+  A&=-\frac{1}{5}
+  \end{aligned}
+\end{equation*}
+Subtitute $x = 2$
+\begin{equation*}
+  \begin{aligned}
+  -14&=A(0)+B(5)\\
+  B&=-\frac{14}{5}
+  \end{aligned}
+\end{equation*}
+Using partial fraction decomposition
+\begin{equation*}
+  \begin{aligned}
+  \int\frac{-3x-8}{x^{2}+x-6}\,dx&=\int-\frac{1}{5}\frac{1}{x+3}-\frac{14}{5}\frac{1}{x-2}\,dx\\
+  &=-\frac{1}{5}\int\frac{1}{x+3}\,dx-\frac{14}{5}\int\frac{1}{x-2}\,dx\\
+  &=-\frac{1}{5}\ln|x+3|-\frac{14}{5}\ln|x-2|+C
+  \end{aligned}
+\end{equation*}
+Subtitute back to the original problem
+\begin{equation}
+  \begin{aligned}
+  \int\frac{2x^{2}-x-20}{x^{2}+x-6}\,dx&=\int{2}\,dx+\int\frac{-3x-8}{x^2+x-6}\,dx\\
+  &=2x-\frac{1}{5}\ln|x+3|-\frac{14}{5}\ln|x-2|+C
+  \end{aligned}
+\end{equation}
+\end{enumerate}
+
+\end{document}
