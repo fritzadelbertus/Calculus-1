@@ -1,0 +1,153 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[a4paper, total={20cm, 25cm}]{geometry}
+\usepackage{tikz}
+\usepackage{multicol}
+
+\title{Chapter 6.9 The Hyperbolic Functions and Their Inverses}
+\author{Fritz Adelbertus Sitindaon}
+\date{22 December 2022}
+
+\begin{document}
+\maketitle
+
+\section{Verify the Identities for the given equations!}  
+  
+\begin{enumerate}
+%Number 1
+\item $\displaystyle e^x = \cosh x+\sinh x$
+
+\begin{equation*}
+  \begin{aligned}
+  e^x &= \cosh x+\sinh x\\
+  &=\frac{e^x+e^{-x}}{2}+\frac{e^x-e^{-x}}{2}\\
+  &=\frac{2e^x}{2}\\
+  &=e^x
+  \end{aligned}
+\end{equation*}
+
+%Number 2
+\item $\displaystyle e^{2x} = \cosh2x+\sinh2x$
+
+\begin{equation*}
+  \begin{aligned}
+  e^{2x} &= \cosh2x+\sinh2x\\
+  &=\frac{e^{2x}+e^{-2x}}{2}+\frac{e^{2x}-e^{-2x}}{2}\\
+  &=\frac{2e^{2x}}{2}\\
+  &=e^{2x}
+  \end{aligned}
+\end{equation*}
+
+%Number 3
+\item $\displaystyle e^x = \cosh x-\sinh x$
+
+\begin{equation*}
+  \begin{aligned}
+  e^{-x} &= \cosh x+\sinh x\\
+  &=\frac{e^x+e^{-x}}{2}-\frac{e^x-e^{-x}}{2}\\
+  &=\frac{2e^{-x}}{2}\\
+  &=e^{-x}
+  \end{aligned}
+\end{equation*}
+
+%Number 4
+\item $\displaystyle e^{2x} = \cosh2x-\sinh2x$
+
+\begin{equation*}
+  \begin{aligned}
+  e^{-2x} &= \cosh2x-\sinh2x\\
+  &=\frac{e^{2x}+e^{-2x}}{2}-\frac{e^{2x}-e^{-2x}}{2}\\
+  &=\frac{2e^{-2x}}{2}\\
+  &=e^{-2x}
+  \end{aligned}
+\end{equation*}
+
+%Number 5
+\item $\displaystyle\sinh(x+y)=\sinh{x}\cosh{y}+\cosh{x}\sinh{x}$
+
+\begin{equation*}
+  \begin{aligned}
+  \sinh(x+y)&=\sinh{x}\cosh{y}+\cosh{x}\sinh{x}\\
+  &=\frac{e^x-e^{-x}}{2}\times\frac{e^y+e^{-y}}{2}+\frac{e^x+e^{-x}}{2}\times\frac{e^y-e^{-y}}{2}\\
+  &=\frac{e^{x+y}+e^{x-y}-e^{-x+y}-e^{-x-y}}{4}+\frac{e^{x+y}-e^{x-y}+e^{-x+y}-e^{-x-y}}{4}\\
+  &=\frac{2e^{x+y}-2e^{-x-y}}{4}\\
+  &=\frac{e^{x+y}-e^{-(x+y)}}{2}\\
+  &=\sinh(x+y)
+  \end{aligned}
+\end{equation*}
+
+%Number 6
+\item $\displaystyle\sinh(x-y)=\sinh{x}\cosh{y}-\cosh{x}\sinh{x}$
+
+\begin{equation*}
+  \begin{aligned}
+  \sinh(x-y)&=\sinh{x}\cosh{y}-\cosh{x}\sinh{x}\\
+  &=\frac{e^x-e^{-x}}{2}\times\frac{e^y+e^{-y}}{2}-\frac{e^x+e^{-x}}{2}\times\frac{e^y-e^{-y}}{2}\\
+  &=\frac{e^{x+y}+e^{x-y}-e^{-x+y}-e^{-x-y}}{4}-\frac{e^{x+y}-e^{x-y}+e^{-x+y}-e^{-x-y}}{4}\\
+  &=\frac{2e^{x-y}-2e^{-x+y}}{4}\\
+  &=\frac{e^{x-y}-e^{-(x-y)}}{2}\\
+  &=\sinh(x-y)
+  \end{aligned}
+\end{equation*}
+
+%Number 7
+\item $\displaystyle\cosh(x+y)=\cosh{x}\cosh{y}+\sinh{x}\sinh{y}$
+
+\begin{equation*}
+  \begin{aligned}
+  \cosh(x+y)&=\cosh{x}\cosh{y}+\sinh{x}\sinh{y}\\
+  &=\frac{e^x+e^{-x}}{2}\times\frac{e^y+e^{-y}}{2}+\frac{e^x-e^{-x}}{2}\times\frac{e^y-e^{-y}}{2}\\
+  &=\frac{e^{x+y}+e^{x-y}+e^{-x+y}+e^{-x-y}}{4}+\frac{e^{x+y}-e^{x-y}-e^{-x+y}+e^{-x-y}}{4}\\
+  &=\frac{2e^{x+y}+2e^{-x-y}}{4}\\
+  &=\frac{e^{x+y}+e^{-(x+y)}}{2}\\
+  &=\cosh(x+y)
+  \end{aligned}
+\end{equation*}
+
+%Number 8
+\item $\displaystyle\cosh(x-y)=\cosh{x}\cosh{y}-\sinh{x}\sinh{y}$
+
+\begin{equation*}
+  \begin{aligned}
+  \cosh(x-y)&=\cosh{x}\cosh{y}-\sinh{x}\sinh{y}\\
+  &=\frac{e^x+e^{-x}}{2}\times\frac{e^y+e^{-y}}{2}-\frac{e^x-e^{-x}}{2}\times\frac{e^y-e^{-y}}{2}\\
+  &=\frac{e^{x+y}+e^{x-y}+e^{-x+y}+e^{-x-y}}{4}-\frac{e^{x+y}-e^{x-y}-e^{-x+y}+e^{-x-y}}{4}\\
+  &=\frac{2e^{x-y}+2e^{-x+y}}{4}\\
+  &=\frac{e^{x-y}+e^{-(x-y)}}{2}\\
+  &=\cosh(x-y)
+  \end{aligned}
+\end{equation*}
+
+%Number 9
+\item $\displaystyle\tanh(x+y)=\frac{\tanh{x}+\tanh{y}}{1+\tanh{x}\tanh{y}}$
+
+\begin{equation*}
+  \begin{aligned}
+  \tanh(x+y)&=\frac{\tanh{x}+\tanh{y}}{1+\tanh{x}\tanh{y}}\\
+  &=\frac{\frac{\sinh{x}}{\cosh{x}}+\frac{\sinh{y}}{\cosh{y}}}{1+\frac{\sinh{x}}{\cosh{x}}\times\frac{\sinh{y}}{\cosh{y}}}\\
+  &=\frac{\frac{\sinh{x}\cosh{y}+\cosh{x}\sinh{y}}{\cosh{x}\cosh{y}}}{1+\frac{\sinh{x}\sinh{y}}{\cosh{x}\cosh{y}}}\\
+  &=\frac{\frac{\sinh{x}\cosh{y}+\cosh{x}\sinh{y}}{\cosh{x}\cosh{y}}}{\frac{\cosh{x}\cosh{y}+\sinh{x}\sinh{y}}{\cosh{x}\cosh{y}}}\\
+  &=\frac{\sinh{x}\cosh{y}+\cosh{x}\sinh{y}}{\cosh{x}\cosh{y}+\sinh{x}\sinh{y}}\\
+  &=\frac{\sinh(x+y)}{\cosh(x+y)}\\
+  &=\tanh(x+y)
+  \end{aligned}
+\end{equation*}
+
+%Number 10
+\item $\displaystyle\tanh(x-y)=\frac{\tanh{x}-\tanh{y}}{1-\tanh{x}\tanh{y}}$
+
+\begin{equation*}
+  \begin{aligned}
+  \tanh(x-y)&=\frac{\tanh{x}-\tanh{y}}{1-\tanh{x}\tanh{y}}\\
+  &=\frac{\frac{\sinh{x}}{\cosh{x}}-\frac{\sinh{y}}{\cosh{y}}}{1-\frac{\sinh{x}}{\cosh{x}}\times\frac{\sinh{y}}{\cosh{y}}}\\
+  &=\frac{\frac{\sinh{x}\cosh{y}-\cosh{x}\sinh{y}}{\cosh{x}\cosh{y}}}{1-\frac{\sinh{x}\sinh{y}}{\cosh{x}\cosh{y}}}\\
+  &=\frac{\frac{\sinh{x}\cosh{y}-\cosh{x}\sinh{y}}{\cosh{x}\cosh{y}}}{\frac{\cosh{x}\cosh{y}-\sinh{x}\sinh{y}}{\cosh{x}\cosh{y}}}\\
+  &=\frac{\sinh{x}\cosh{y}-\cosh{x}\sinh{y}}{\cosh{x}\cosh{y}-\sinh{x}\sinh{y}}\\
+  &=\frac{\sinh(x-y)}{\cosh(x-y)}\\
+  &=\tanh(x-y)
+  \end{aligned}
+\end{equation*}
+\end{enumerate}
+
+\end{document}
